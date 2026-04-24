@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário - Entra21</title>
+</head>
+<body>
+    <form action="enviar.php"method="post">
+        <div>
+            <label for="">Nome Completo:</label>
+            <input type="text" name="nome_completo" id="nome_completo" required>
+        </div>
+        <div>
+            <label for="email_usuario">E-mail:</label>
+            <input type="email" name="email_usuario" id="email_usuario" required>
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" required>
+        </div>
+          <hr> linha
+        <div>
+            <label for="cidade">Cidade:</label>
+            <select name="cidade" id="cidade">
+                <option value="1">Balneario Camboriu</option>
+                <option value="2" selected>Itajai</option>
+                <option value="3">Itapema</option>
+                <option value="4">Camboriu</option>
+                <option value="5">Blumenau</option>
+            </select>
+            <div>   
+            </div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="5" maxlength="20"></textarea>
+            </div>
+            <div>
+                 <label for="label_sexo">Sexo:</label>
+            <div>
+                <input type="radio" name="sexo" id="sexo_m" checked> 
+                <label for="sexo_m">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="sexo_f">
+                <label for="sexo_f">Feminino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="sexo_o" value="0">
+                <label for="sexo_o">Outro</label>
+            </div>
+            </div>
+            <div>
+            <button type="submit">Enviar dados:</button>
+        </div>
+      </form>
+    </body>
+</html>
